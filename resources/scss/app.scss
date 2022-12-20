@@ -1,1 +1,39 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+img{
+    width: 100%;
+}
+.container-blue{
+    width: 100%;
+    background-color: rgb(2, 130, 249);
+        h5{
+            font-size: 15px;
+            padding-right: 30px;
+        }
+}
+.nav-bar{
+    ul{
+        list-style: none;
+
+        li{
+            padding-left: 20px;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: black;
+                    
+                }
+                
+        } 
+    }
+}
+// JUMBOTRON
+.jumbotron{
+    img{
+        height: 800px;
+        object-fit:cover;
+    }
+    
+    
+}
