@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>
-    Home Page
+    {{$product->title}}
 </h1>
     
 @endsection

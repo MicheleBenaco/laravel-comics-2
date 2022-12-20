@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class Comic extends Controller
@@ -14,7 +15,7 @@ class Comic extends Controller
      */
     public function index()
     {
-        //
+        return view('products.index');
     }
 
     /**
@@ -24,7 +25,7 @@ class Comic extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
@@ -46,7 +47,8 @@ class Comic extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::find();
+        return view('products.show',compact('product'));
     }
 
     /**
